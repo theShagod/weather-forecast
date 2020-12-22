@@ -2,7 +2,7 @@
 Search the weather forcast.
 
 ### Installation
-Sign up at openweathermap.org and replace var key = <YOUR KEY HERE> on app.js with your key.
+Sign up at openweathermap.org and replace var `key = <YOUR KEY HERE>` on app.js with your key.
 
 ### Description
 Type in a city name and this app will return the city weather forcast. 
