@@ -1,6 +1,7 @@
+
 var search = ""
 var forcastDat = null
-
+//console.log(dateFns.fromUnixTime(1608658970))
 /*
 Controller
 */
@@ -116,7 +117,7 @@ function createCardContainer(date = "", temp="", hum="", imgBlob=""){
       cardBody.classList.add("card-body","bg-light");
         const cardTitle = document.createElement("h5");
         cardTitle.classList.add("card-title");
-        cardTitle.innerText = `Date: ${date}`;
+        cardTitle.innerText = `${date}`;
         const img = document.createElement("img");
         img.src = imgBlob;
         const p1 = document.createElement("p");
