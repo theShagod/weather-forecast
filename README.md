@@ -15,6 +15,7 @@ Type in a city name and this app will return the city weather forcast.
  - Bootstrap
  - OpenWeatherMap api
  - AJAX
+ - MomentJS
 
 ### Installation
 No installation necessary.
