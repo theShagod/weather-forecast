@@ -8,7 +8,10 @@ Controller
 //searches forcast data given city and returns true if successful
 async function searchForcastDat(){
   let search = document.querySelector("#search").value;
-  var key = "1e1b023ee586a7e9d8bcc5a9dbe4382e"
+  var key = "GET YOUR API KEY AT OPENWEATHERMAP.ORG"
+  if (key === "GET YOUR API KEY AT OPENWEATHERMAP.ORG"){
+    throw Error("GET YOUR API KEY AT OPENWEATHERMAP.ORG and then replace the value of key to that...")
+  }
   var forcastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${search}&units=imperial&appid=${key}`
   if (search != ""){
     await fetchingForcast(forcastUrl);
