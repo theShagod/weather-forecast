@@ -1,8 +1,8 @@
 ## Weather-forecast
 Search the weather forecast.
 
-### Installation
-Sign up at openweathermap.org and replace `var key = <YOUR KEY HERE>` on app.js with your key.
+### Demo
+![weather-forecast-demo](./weather-forecast-demo.gif)
 
 ### Description
 Type in a city name and this app will return the city weather forcast. 
@@ -18,7 +18,7 @@ Type in a city name and this app will return the city weather forcast.
  - MomentJS
 
 ### Installation
-No installation necessary.
+Sign up at openweathermap.org and replace `var key = <YOUR KEY HERE>` on app.js with your key.
 
 ### License
 Copyright <2020>
