@@ -1,5 +1,5 @@
 ## Weather-forecast
-Search the weather forcast.
+Search the weather forecast.
 
 ### Installation
 Sign up at openweathermap.org and replace `var key = <YOUR KEY HERE>` on app.js with your key.
