@@ -24,6 +24,7 @@ self.addEventListener("keyup", async (event) => {
     searchForcastDat();
     }
 });
+
 /*
 Model
 */
@@ -94,7 +95,7 @@ async function updateforcastPanel(isBadInput = false){
     let hum = []
     let imgBlob = []
     for (let i = 0; i < forcastDat.list.length; i++){
-      dt.push(forcastDat.list[i].dt_txt);
+      dt.push(forcastDat.list[i].dt);
       temp.push(forcastDat.list[i].main.temp);
       hum.push(forcastDat.list[i].main.humidity);
       await fetchingImg(forcastDat.list[i].weather[0].icon).then(blob=>{imgBlob.push(URL.createObjectURL(blob))})
@@ -106,7 +107,9 @@ async function updateforcastPanel(isBadInput = false){
     }
   }
   }
-
+function momentUnixToDate(unixVal){
+  return moment.unix(unixVal).format("MM/DD/YYYY hh:mm:ss A");
+}
 function createCardContainer(date = "", temp="", hum="", imgBlob=""){
 
   const container = document.createElement("div");
@@ -117,7 +120,7 @@ function createCardContainer(date = "", temp="", hum="", imgBlob=""){
       cardBody.classList.add("card-body","bg-light");
         const cardTitle = document.createElement("h5");
         cardTitle.classList.add("card-title");
-        cardTitle.innerText = `${date}`;
+        cardTitle.innerText = `${momentUnixToDate(date)}`;
         const img = document.createElement("img");
         img.src = imgBlob;
         const p1 = document.createElement("p");
