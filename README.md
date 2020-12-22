@@ -7,12 +7,13 @@ Search the weather forcast.
 Type in a city name and this app will return the city weather forcast. 
 
 ### Technologies
-Javascript
-HTML
-CSS
-Bootstrap
-OpenWeatherMap api
-AJAX
+
+ - Javascript
+ - HTML
+ - CSS
+ - Bootstrap
+ - OpenWeatherMap api
+ - AJAX
 
 ### Installation
 No installation necessary.
